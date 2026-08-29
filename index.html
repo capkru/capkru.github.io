@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Seitliche Navigation -->
+    <nav id="sidebar" class="collapsed">
+        <button id="menu-toggle">☰</button>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     
+    <!-- Hauptinhalt -->
     <main>
         <section id="about">
             <h1>Welcome</h1>
             <p>Hi, I am Daniel.</p>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2026</p>
-    </footer>
+
+    <!-- Skript für das Ausklappen -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        });
+    </script>
 </body>
 </html>
