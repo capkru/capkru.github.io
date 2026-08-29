@@ -1,2 +1,2 @@
 # capkru.github.io
-Personal GitHub Pages Site.
+personal GitHub-pages site.
